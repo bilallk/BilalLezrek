@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { MatDivider } from "@angular/material/divider";
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  standalone: true,
+  imports: [MatCardModule, MatButtonModule, MatDivider],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrl: './home.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home {
 
