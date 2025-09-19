@@ -1,12 +1,43 @@
 .sidenav-container {
   height: 100vh;
-  
 }
 
+/* Sidenav styles */
 mat-sidenav {
-  width: 200px;
+  width: 10vw;
+  background-color: rgb(4, 47, 128);
+  color: white;
+  padding-top: 5vh;
+  font: 1.5em sans-serif;
 }
 
+a {
+  color: white;
+  display: block;
+  padding: 3vh;
+  font-weight: bold;
+}
+
+mat-divider {
+  background-color: white;
+  width: 6vw;
+}
+
+/* Content styles */
 .content {
-  padding: 20px;
+  height: 93vh;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+/* Toolbar styles */
+.toolbar {
+  width: 100vw;
+  height: 7vh;
+  background-color: rgb(4, 47, 128);
+  color: white;
+  font: 1.5em sans-serif;
+}
+mat-icon {
+  color: white;
 }
