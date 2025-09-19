@@ -1,0 +1,61 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+/* Sidenav styles */
+mat-sidenav {
+  width: 10vw;
+  background-color: rgb(4, 47, 128);
+  color: white;
+  padding-top: 5vh;
+  font: 1.5em sans-serif;
+}
+mat-nav-list {
+  justify-content: center; 
+  text-align: center;        
+  font-weight: bold;         
+}
+
+a {
+  color: white;
+  display: block;
+  padding: 3vh;
+  font-weight: bold;
+}
+
+mat-divider {
+  background-color: white;
+  width: 7vw;
+}
+
+mat-nav-list a.mat-list-item {
+  display: flex;
+  align-items: center;       /* keep icon + text aligned in one row */
+  justify-content: flex-start;
+  gap: 12px;                 /* space between icon and text */
+}
+
+mat-nav-list a.mat-list-item mat-icon {
+  min-width: 32px;           /* reserve space for icons */
+  text-align: center;        /* center icon in its box */
+  font-size: 24px;           /* adjust icon size */
+}
+
+/* Content styles */
+.content {
+  height: 93vh;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+/* Toolbar styles */
+.toolbar {
+  width: 100vw;
+  height: 7vh;
+  background-color: rgb(4, 47, 128);
+  color: white;
+  font: 1.5em sans-serif;
+}
+mat-icon {
+  color: white;
+}
