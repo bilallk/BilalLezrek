@@ -8,7 +8,7 @@ import { MatDivider } from "@angular/material/divider";
   standalone: true,
   imports: [MatCardModule, MatButtonModule, MatDivider],
   templateUrl: './home.html',
-  styleUrl: './home.css',
+  styleUrl: './home.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home {

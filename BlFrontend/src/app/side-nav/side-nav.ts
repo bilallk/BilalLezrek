@@ -10,7 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-side-nav',
   templateUrl: './side-nav.html',
-  styleUrls: ['./side-nav.css'],
+  styleUrls: ['./side-nav.scss'],
   imports: [MatSidenav, MatSidenavContainer,MatListModule,MatToolbarModule,MatButtonModule,RouterModule,MatSidenavModule,MatIconModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
