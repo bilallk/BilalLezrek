@@ -6,7 +6,7 @@ import { SideNav } from './side-nav/side-nav';
   selector: 'app-root',
   imports: [SideNav],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.scss'
 })
 export class App {
   protected readonly title = signal('BlFrontend');
