@@ -1,0 +1,73 @@
+.sidenav-container {
+  height: 100vh;
+}
+
+/* Sidenav styles */
+mat-sidenav {
+  width: 10vw;
+  padding-top: 6vh;
+}
+
+a {
+  font-weight: bold;
+  vertical-align: middle;
+  text-align: center;     
+  font-size: 1.5em;   
+}
+
+.mat-icon {
+  vertical-align: middle;
+  float: left;
+  margin-left: 1.5vw;
+}
+
+
+
+mat-divider {
+  background-color: var(--mat-sys-on-surface);
+  height: 1px;
+  margin-left: 1.5vw;
+  width: 7vw;
+}
+
+
+// Color and background styles
+mat-icon,span,mat-sidenav,a,.toolbar {
+  color: var(--mat-sys-on-surface);
+}
+.content,.toolbar,mat-sidenav {
+  background-color: var(--mat-sys-on-primary);
+}
+
+
+
+
+
+
+
+
+
+/* Toolbar styles */
+.toolbar {
+  width: 100vw;
+  height: 7vh;
+  font: 1.5em sans-serif;
+}
+
+.sidenav-toggle {
+  margin-left: 0vw;
+  margin-right: 1vw;
+  color: var(--mat-sys-on-surface);
+}
+
+
+
+
+/* Content styles */
+.content {
+  height: 93vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  overflow-y: auto;
+  background-color: var(--mat-sys-on-surface);
+}

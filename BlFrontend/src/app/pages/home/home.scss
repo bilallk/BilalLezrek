@@ -1,0 +1,17 @@
+.feature-card {
+  max-width: 400px;
+  border-radius: 25px;
+  margin-left: 2em;
+  margin-top: 1em;
+  float: inline-start;
+}
+button {
+  margin: 1em;
+  background-color: var(--mat-sys-on-primary);
+  color: white !important;
+}
+//black text
+h1,p {
+  color: var(--mat-sys-surface);
+  text-align: center;
+}
