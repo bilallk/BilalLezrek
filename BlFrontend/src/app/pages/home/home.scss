@@ -12,6 +12,12 @@ mat-card-header {
   background-color: var(--mat-sys-on-primary);
   color: var(--mat-sys-on-surface);
 }
+button {
+  margin: 1em;
+  background-color: var(--mat-sys-on-primary);
+  color: white !important;
+}
+//black text
 h1,p {
   color: var(--mat-sys-surface);
 }
