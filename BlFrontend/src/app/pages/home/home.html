@@ -2,7 +2,7 @@
 <p>Welcome to the dashboard! Here you can find an overview of your activities and quick access to important features.</p>
 <mat-divider></mat-divider>
 @for (feature of features; track feature.id) {
-    <app-feature-card [data]="feature"></app-feature-card>
+    <app-feature-card class="feature-card" [data]="feature"></app-feature-card>
 }
     
 

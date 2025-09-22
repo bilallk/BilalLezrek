@@ -1,16 +1,9 @@
-mat-card {
-  max-width: 16vw;
-  max-height: 30vh;
+.feature-card {
+  max-width: 400px;
+  border-radius: 25px;
   margin-left: 2em;
   margin-top: 1em;
-  background-color: var(--mat-sys-on-surface);
-}
-
-mat-card-header {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: var(--mat-sys-on-primary);
-  color: var(--mat-sys-on-surface);
+  float: inline-start;
 }
 button {
   margin: 1em;
