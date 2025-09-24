@@ -1,0 +1,11 @@
+<div>
+    @for (button of buttons; track $index) {
+        <app-action-button
+            [label]="button.label" 
+            [color]="button.color" 
+            [disabled]="button.disabled" 
+            (action)="button.onClick()">
+        </app-action-button>
+    }
+    
+</div>

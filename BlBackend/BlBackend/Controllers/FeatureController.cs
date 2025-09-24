@@ -50,7 +50,14 @@ namespace BlBackend.Controllers
         {
             var deleted = await _service.DeleteAsync(id);
             if (!deleted) return NotFound();
-            return Ok(new { Message = $"Feature {id} deleted." });
+            return Ok(new { Message = $"Feature {id} has been deleted." });
+        }
+        [HttpPut("enable-disable/{id}")]
+        public async Task<IActionResult> Disable(int id)
+        {
+            var toggledFeature = await _service.ToggleEnabledAsync(id);
+            if (!toggledFeature) return NotFound();
+            return Ok(new { Message = $"Availability of the feature with id {id} has been toggled." });
         }
     }
 }

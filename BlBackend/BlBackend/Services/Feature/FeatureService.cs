@@ -61,5 +61,14 @@ namespace BlBackend.Services
             await _repository.DeleteAsync(feature);
             return true;
         }
+
+        public async Task<bool> ToggleEnabledAsync(int id)
+        {
+            var feature = await _repository.GetByIdAsync(id);
+            if (feature == null) return false;
+            feature.IsEnabled = !feature.IsEnabled;
+            await _repository.UpdateAsync(feature);
+            return true;
+        }
     }
 }

@@ -9,5 +9,6 @@ namespace BlBackend.Services
         Task<(bool Success, List<string> Errors, FeatureDto.Index? Created)> CreateAsync(FeatureDto.Mutate dto);
         Task<bool> UpdateAsync(int id, FeatureDto.Mutate dto);
         Task<bool> DeleteAsync(int id);
+        Task<bool> ToggleEnabledAsync(int id);
     }
 }

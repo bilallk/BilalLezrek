@@ -8,6 +8,7 @@
     transition: box-shadow 0.2s, transform 0.2s;
     min-width: 280px;
     max-width: 400px;
+    border: gray 1px solid;
 
     &:hover,
     &:focus-within {

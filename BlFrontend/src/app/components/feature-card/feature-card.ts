@@ -1,10 +1,11 @@
 import { Component,computed,input } from '@angular/core';
 import { MatCardModule } from "@angular/material/card";
 import { Feature,FeatureType } from '../../models/feature';
+import { ActionBar } from "../buttons/action-bar/action-bar";
 
 @Component({
   selector: 'app-feature-card',
-  imports: [MatCardModule],
+  imports: [MatCardModule, ActionBar],
   templateUrl: './feature-card.html',
   styleUrl: './feature-card.scss'
 })
@@ -14,7 +15,7 @@ export class FeatureCard {
   color = computed(() => {
       switch (this.data().type) {
         case FeatureType.Game:
-          return 'blue';
+          return 'var(--mat-sys-on-primary)';
         case FeatureType.Information:
           return 'green';
         case FeatureType.Utility:
@@ -27,4 +28,5 @@ export class FeatureCard {
           return 'gray';
         } 
     });
+  featureType = computed(() => FeatureType[this.data().type]);
 }
