@@ -1,9 +1,9 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ChangeDetectionStrategy, Component, input} from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { MatDivider } from "@angular/material/divider";
 import { FeatureCard } from "../../components/feature-card/feature-card";
-import { Feature,FeatureType } from '../../models/feature';
+import { Feature } from '../../models/feature';
 import { Observable } from 'rxjs';
 import { FeatureService } from '../../service/service';
 import { AsyncPipe } from '@angular/common';
@@ -17,6 +17,7 @@ import { AsyncPipe } from '@angular/common';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home {
+
   features$!: Observable<Feature[]>;
   constructor(private features: FeatureService) {
     this.features$ = this.features.getAll();

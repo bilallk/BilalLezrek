@@ -1,11 +1,14 @@
 <div>
     @for (button of buttons; track $index) {
-        <app-action-button
+        @if (!button.hidden){
+            <app-action-button
+            [id]="id"
             [label]="button.label" 
             [color]="button.color" 
-            [disabled]="button.disabled" 
+            [hidden]="button.hidden" 
             (action)="button.onClick()">
         </app-action-button>
+        }
     }
     
 </div>

@@ -1,4 +1,4 @@
-import { Component,computed,input } from '@angular/core';
+import { Component,computed,Input,input } from '@angular/core';
 import { MatCardModule } from "@angular/material/card";
 import { Feature,FeatureType } from '../../models/feature';
 import { ActionBar } from "../buttons/action-bar/action-bar";

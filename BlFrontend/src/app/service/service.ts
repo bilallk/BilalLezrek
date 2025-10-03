@@ -34,4 +34,8 @@ export class FeatureService {
   delete(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
   }
+  
+  toggleAvailability(id: number): Observable<void> {
+    return this.http.put<void>(`${this.apiUrl}/enable-disable/${id}`,id);
+  }
 }

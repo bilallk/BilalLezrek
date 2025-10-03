@@ -9,9 +9,10 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './action-button.scss'
 })
 export class ActionButton {
+  @Input() id!: number;
   @Input() label!: string;
   @Input() color: string = "blue";
-  @Input() disabled = false;
+  @Input() hidden = false;
   @Output() action = new EventEmitter<void>();
 
   onClick() {

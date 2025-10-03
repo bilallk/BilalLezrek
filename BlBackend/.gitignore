@@ -1,0 +1,23 @@
+# Ignore build outputs
+/bin/
+/obj/
+
+# Visual Studio
+.vs/
+
+# User-specific files
+*.user
+*.suo
+
+# Blazor/WebAssembly assets
+*.assets.cache
+*.dswa.cache.json
+
+# NuGet
+*.nupkg
+project.assets.json
+*.nuget.g.props
+*.nuget.g.targets
+
+# App settings (optional if you don't want to track)
+appsettings.json
