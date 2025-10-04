@@ -6,7 +6,7 @@
 
 </div>
 <mat-divider></mat-divider>
-@for (feature of features$ | async; track feature.id) {
+@for (feature of features$ | async; track feature.featureId) {
     <app-feature-card class="feature-card" [data]="feature"></app-feature-card>
 }
     

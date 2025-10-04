@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Feature } from '../models/feature';
@@ -13,7 +13,7 @@ export interface Todo {
 export class FeatureService {
   private apiUrl = 'https://localhost:7182/api/Feature';
 
-  constructor(private http: HttpClient) {}
+  private http = inject(HttpClient);
 
   getAll(): Observable<Feature[]> {
     return this.http.get<Feature[]>(this.apiUrl);
@@ -36,6 +36,6 @@ export class FeatureService {
   }
   
   toggleAvailability(id: number): Observable<void> {
-    return this.http.put<void>(`${this.apiUrl}/enable-disable/${id}`,id);
+  return this.http.put<void>(`${this.apiUrl}/enable-disable/${id}`, {});
   }
 }

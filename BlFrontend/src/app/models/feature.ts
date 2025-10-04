@@ -1,11 +1,11 @@
 export interface Feature {
-    id: number;
+    featureId: number;
     name: string;
     description: string;
     type: FeatureType;
     icon?: string;
     link?: string;
-    isEnabled?: boolean;
+    isEnabled: boolean;
 }
 
 

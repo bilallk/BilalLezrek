@@ -1,4 +1,4 @@
-import { Component,computed,Input,input } from '@angular/core';
+import { Component,computed,input } from '@angular/core';
 import { MatCardModule } from "@angular/material/card";
 import { Feature,FeatureType } from '../../models/feature';
 import { ActionBar } from "../buttons/action-bar/action-bar";
@@ -7,11 +7,11 @@ import { ActionBar } from "../buttons/action-bar/action-bar";
   selector: 'app-feature-card',
   imports: [MatCardModule, ActionBar],
   templateUrl: './feature-card.html',
-  styleUrl: './feature-card.scss'
+  styleUrl: './feature-card.scss',
 })
 export class FeatureCard {
   data = input.required<Feature>();
-
+  
   color = computed(() => {
       switch (this.data().type) {
         case FeatureType.Game:
