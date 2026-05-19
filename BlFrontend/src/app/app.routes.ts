@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
-import { ToDoListPage } from './pages/todo-list/to-do-list.page';
+import { ToDoList } from './pages/todo-list/to-do-list/to-do-list'
 
 export const routes: Routes = [
     { path: '', component: Home, },
-    { path: 'todo/', component: ToDoListPage },
+    { path: 'todo/', component: ToDoList },
 
 ];
